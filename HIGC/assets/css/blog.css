@@ -17,7 +17,7 @@ body {
     background: url(../images/zane-lee-iru3lemAGKU-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 
 }
 .body {
