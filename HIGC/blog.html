@@ -10,24 +10,48 @@
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/blog.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header>
         <div class="logo">
             <img src="assets/images/WhatsApp_Image_2021-08-10_at_12.07.33_AM-removebg-preview.png" alt="HIGC church logo, Havilah international gospel center">
         </div>
-        <div class="menu">
+        <div class="menus">
             <button><i class="fas fa-bars"></i></button>
         </div>
     </header>
+    <div class="sidebar">
+        <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="sermons.html">Sermons</a></li>
+             <li><a href="events.html">Events</a></li>
+             <li><a href="#">PartnerShip</a></li>
+             <li><a href="#">About HIGC</a></li>
+        </ul>
+    </div>
     <div class="text">
-        <h1>Welcome To HIGC Blog</h1>
+        <h1 class="animate__animated animate__backInDown">Welcome To HIGC Blog</h1>
         <p>This is where you can share what you've learnt and also learn from others.</p>
+   <button class="animate__animated animate__rotateInDownLeft animate__slower"><a href="#" >Share What You've Learnt</a></button>
+   <button class="animate__animated animate__rotateInDownRight animate__slower"><a href="#" >Read What Other's Have Learnt</a></button>
     </div>
     <div class="body">
 
     </div>
+    <script>
+        let bars = document.querySelector('.fa-bars')
+bars.addEventListener('click', () =>{
+    if (document.querySelector('.sidebar').style.opacity == "0") {
+        document.querySelector('.sidebar').style.transition = "1s"
+        document.querySelector('.sidebar').style.opacity = "1"
+    } else {
+        document.querySelector('.sidebar').style.opacity = "0"
+    }
     
+    
+})
+    </script>
 </body>
 </html>
