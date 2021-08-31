@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    background: rgb(155, 127, 49);
+    padding: 32px;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header ul li a, .ser button{
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins",sans-serif;
+    padding: 12px;
+}
+header ul li a:hover,.ser button:hover {
+    transition: 1s;
+    background: rgba(255, 255, 255, 0.9);
+    color: rgb(189, 157, 69);
+}header ul li a:active, .ser button:active{
+    padding: 7px 6px;
+   }
+.body2 {
+    /* margin: 12px; */
+    /* margin-left: 103px; */
+    display: flex;
+    flex-wrap: wrap;
+
+    text-align: center;
+}
+
+.ser h1 {
+    font-family: 'Poppins',sans-serif;
+    padding: 4px;
+    color: white;
+}
+.ser p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    padding: 8px;
+}
+.ser button {
+    padding: 9px 19px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+
+
+}
+.ser {
+    background: rgb(139, 102, 32);
+    padding: 12px;
+    margin: 12px auto;
+    width: 350px;
+}
+/* .listen {
+    grid-column: 2/4;
+} */
