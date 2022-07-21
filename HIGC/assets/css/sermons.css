@@ -19,13 +19,13 @@ header ul {
     justify-content: space-around;
     align-items: center;
 }
-header ul li a, .ser button{
+header ul li a, .ser button a{
     text-decoration: none;
     color: white;
     font-family: "Poppins",sans-serif;
     padding: 12px;
 }
-header ul li a:hover,.ser button:hover {
+header ul li a:hover,.ser button a:hover {
     transition: 1s;
     background: rgba(255, 255, 255, 0.9);
     color: rgb(189, 157, 69);
@@ -65,6 +65,11 @@ header ul li a:hover,.ser button:hover {
     margin: 12px auto;
     width: 350px;
 }
-/* .listen {
-    grid-column: 2/4;
-} */
+
+.sidebar {
+    border: 2px solid black;
+    width: 30%;
+    padding: 17px;
+
+}
+

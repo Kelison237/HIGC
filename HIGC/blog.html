@@ -34,24 +34,28 @@
     <div class="text">
         <h1 class="animate__animated animate__backInDown">Welcome To HIGC Blog</h1>
         <p>This is where you can share what you've learnt and also learn from others.</p>
-   <button class="animate__animated animate__rotateInDownLeft animate__slower"><a href="#" >Share What You've Learnt</a></button>
+   <div class="btns">
+        <button class="animate__animated animate__rotateInDownLeft animate__slower"><a href="#" >Share What You've Learnt</a></button>
    <button class="animate__animated animate__rotateInDownRight animate__slower"><a href="#" >Read What Other's Have Learnt</a></button>
     </div>
+</div>
     <div class="body">
 
     </div>
     <script>
         let bars = document.querySelector('.fa-bars')
 bars.addEventListener('click', () =>{
-    if (document.querySelector('.sidebar').style.opacity == "0") {
-        document.querySelector('.sidebar').style.transition = "1s"
-        document.querySelector('.sidebar').style.opacity = "1"
-    } else {
-        document.querySelector('.sidebar').style.opacity = "0"
-    }
+    let sidebar = document.querySelector('.sidebar');
+    if(sidebar.style.display === 'none'){
+        sidebar.style.transition = '0.5s';
+    sidebar.style.display = 'block';
+    } else{
+        sidebar.style.display = 'none';
+    };
     
     
-})
+});
+
     </script>
 </body>
 </html>

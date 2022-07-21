@@ -33,6 +33,7 @@ body {
 }
 .text {
     text-align: center;
+   
 
 }
 .text h1 {
@@ -60,7 +61,6 @@ body {
 }
 .text button {
     border: none;
-   
     font-family: 'Josefin Sans', sans-serif;
     font-size: 17px;
     background: none;
@@ -74,7 +74,9 @@ body {
 .sidebar {
     position: absolute;
     right: 10px;
-    opacity: 0;
+    /* opacity: 0; */
+    display: none;
+    /* display: block; */
     top: 42px;
     margin-left: -123px;
     background: rgba(0, 0, 0, 0.555);
@@ -97,4 +99,13 @@ body {
 .sidebar li a:hover {
     transition: 1s;
     color: rgb(150, 125, 14);
+  
+}
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.btns button {
+margin: 12px;
 }
